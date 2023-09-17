@@ -11,9 +11,9 @@ let candidateAnswer = ''
 
 
 //TODO: Variables for Part 2
-let questions;
-let correctAnswers;
-let candidateAnswers;
+let questions = ['Who was the first American woman in space? ', 'True or false: 5 kilometer == 5000 meters? ', '(5 + 3)/2 * 10 = ? ', "Given the array [8, 'Orbit', 'Trajectory', 45], what entry is at index 2? ", 'What is the minimum crew size for the ISS? ' ]
+let correctAnswers = ["Sally Ride", "true", "40", "Trajectory", "3"]
+let candidateAnswers = []
 
 
 function askForName() {
@@ -24,19 +24,38 @@ function askForName() {
 
 function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
-let candidateAnswer = input.question(question)
+let candidateAnswer = input.question(questions[0])
+candidateAnswers.push(candidateAnswer)
+let candidateAnswer2 = input.question(questions[1])
+candidateAnswers.push(candidateAnswer2)
+let candidateAnswer3 = input.question(questions[2])
+candidateAnswers.push(candidateAnswer3)
+let candidateAnswer4 = input.question(questions[3])
+candidateAnswers.push(candidateAnswer4)
+let candidateAnswer5 = input.question(questions[4])
+candidateAnswers.push(candidateAnswer5)
 
 }
 
 function gradeQuiz(candidateAnswers) {
 
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
-if (candidateAnswer === correctAnswer){
- console.log("Correct! Good job!")
-} else { 
-  console.log('Sorry, that is incorrect.')
-}
-
+console.log(`Candidate: ${candidateName}
+Question 1
+Your answer: ${candidateAnswers[0]}
+Correct answer: ${correctAnswers[0]}
+Question 2
+Your answer: ${candidateAnswers[1]}
+Correct answer: ${correctAnswers[1]}
+Question 3
+Your answer: ${candidateAnswers[2]}
+Correct answer: ${correctAnswers[2]}
+Question 4
+Your answer: ${candidateAnswers[3]}
+Correct answer: ${correctAnswers[3]}
+Question 5
+Your answer: ${candidateAnswers[4]}
+Correct answer: ${correctAnswers[4]}`)
   let grade;  //TODO 3.2 use this variable to calculate the candidates score.
 
 
