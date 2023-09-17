@@ -40,22 +40,27 @@ candidateAnswers.push(candidateAnswer5)
 function gradeQuiz(candidateAnswers) {
 
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
-console.log(`Candidate: ${candidateName}
-Question 1
-Your answer: ${candidateAnswers[0]}
-Correct answer: ${correctAnswers[0]}
-Question 2
-Your answer: ${candidateAnswers[1]}
-Correct answer: ${correctAnswers[1]}
-Question 3
-Your answer: ${candidateAnswers[2]}
-Correct answer: ${correctAnswers[2]}
-Question 4
-Your answer: ${candidateAnswers[3]}
-Correct answer: ${correctAnswers[3]}
-Question 5
-Your answer: ${candidateAnswers[4]}
-Correct answer: ${correctAnswers[4]}`)
+  console.log(`Candidate: ${candidateName}
+
+  Question 1
+  Your answer: ${candidateAnswers[0]}
+  Correct answer: ${correctAnswers[0]}
+  
+  Question 2
+  Your answer: ${candidateAnswers[1]}
+  Correct answer: ${correctAnswers[1]}
+  
+  Question 3
+  Your answer: ${candidateAnswers[2]}
+  Correct answer: ${correctAnswers[2]}
+  
+  Question 4
+  Your answer: ${candidateAnswers[3]}
+  Correct answer: ${correctAnswers[3]}
+  
+  Question 5
+  Your answer: ${candidateAnswers[4]}
+  Correct answer: ${correctAnswers[4]}`)
    //TODO 3.2 use this variable to calculate the candidates score.
    let numCorrect= 0
 
