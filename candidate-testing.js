@@ -56,11 +56,43 @@ Correct answer: ${correctAnswers[3]}
 Question 5
 Your answer: ${candidateAnswers[4]}
 Correct answer: ${correctAnswers[4]}`)
-  let grade;  //TODO 3.2 use this variable to calculate the candidates score.
+   //TODO 3.2 use this variable to calculate the candidates score.
+   let numCorrect= 0
 
+   if (candidateAnswers[0].toLowerCase() === correctAnswers[0].toLowerCase()) {
+     numCorrect = 1
+   }
+   if (candidateAnswers[1].toLowerCase() === correctAnswers[1].toLowerCase()) {
+     numCorrect += 1
+   }
+   if (candidateAnswers[2].toLowerCase() === correctAnswers[2].toLowerCase()) {
+     numCorrect += 1
+   }
+   if (candidateAnswers[3].toLowerCase() === correctAnswers[3].toLowerCase()) {
+     numCorrect += 1
+   }
+   if (candidateAnswers[4].toLowerCase() === correctAnswers[4].toLowerCase()) {
+     numCorrect += 1
+   }
+   
+   let grade = (numCorrect/5) * 100
+   
+   if (grade >= 80) { 
+     console.log(`Congratulations! Your grade of ${grade} passes the test.`)
+   } else {
+     console.log(`Sorry, your grade of ${grade} does not pass this test.`)
+   
+   }
+   
+   
+   return grade;
+   }
+   
 
-  return grade;
-}
+   
+
+  
+  
 
 
 function runProgram() {
