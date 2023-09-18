@@ -88,8 +88,7 @@ function gradeQuiz(candidateAnswers) {
      console.log(`Sorry, your grade of ${grade} does not pass this test.`)
    
    }
-   
-   
+  
    return grade;
    }
    
