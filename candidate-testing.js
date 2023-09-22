@@ -23,16 +23,10 @@ function askForName() {
 
 function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
-let candidateAnswer = input.question(questions[0])
-candidateAnswers.push(candidateAnswer)
-let candidateAnswer2 = input.question(questions[1])
-candidateAnswers.push(candidateAnswer2)
-let candidateAnswer3 = input.question(questions[2])
-candidateAnswers.push(candidateAnswer3)
-let candidateAnswer4 = input.question(questions[3])
-candidateAnswers.push(candidateAnswer4)
-let candidateAnswer5 = input.question(questions[4])
-candidateAnswers.push(candidateAnswer5)
+for (let i = 0; i < questions.length; i++) {
+  let candidateAnswer = input.question(questions[i])
+  candidateAnswers.push(candidateAnswer)
+}
 
 }
 
