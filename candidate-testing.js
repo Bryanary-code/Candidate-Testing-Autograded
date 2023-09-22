@@ -56,22 +56,13 @@ function gradeQuiz(candidateAnswers) {
   Correct answer: ${correctAnswers[4]}`)
    //TODO 3.2 use this variable to calculate the candidates score.
    let numCorrect= 0
-
-   if (candidateAnswers[0].toLowerCase() === correctAnswers[0].toLowerCase()) {
-     numCorrect = 1
-   }
-   if (candidateAnswers[1].toLowerCase() === correctAnswers[1].toLowerCase()) {
-     numCorrect += 1
-   }
-   if (candidateAnswers[2].toLowerCase() === correctAnswers[2].toLowerCase()) {
-     numCorrect += 1
-   }
-   if (candidateAnswers[3].toLowerCase() === correctAnswers[3].toLowerCase()) {
-     numCorrect += 1
-   }
-   if (candidateAnswers[4].toLowerCase() === correctAnswers[4].toLowerCase()) {
-     numCorrect += 1
-   }
+for (let i = 0; i < candidateAnswers.length; i++) {
+  for (let j = 0; j < correctAnswers.length; j++){
+    if (candidateAnswers[i].toLowerCase() === correctAnswers[j].toLowerCase()) {
+      numCorrect += 1
+    }
+  }
+}
    
    let grade = (numCorrect/5) * 100
    
