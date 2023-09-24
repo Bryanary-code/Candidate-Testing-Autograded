@@ -51,7 +51,7 @@ function gradeQuiz(candidateAnswers) {
   Your answer: ${candidateAnswers[3]}
   Correct answer: ${correctAnswers[3]}
   
-  Question 5
+  Question 5git 
   Your answer: ${candidateAnswers[4]}
   Correct answer: ${correctAnswers[4]}`)
    //TODO 3.2 use this variable to calculate the candidates score.
@@ -78,10 +78,6 @@ for (let i = 0; i < candidateAnswers.length; i++) {
    
 
    
-
-  
-  
-
 
 function runProgram() {
   askForName();
